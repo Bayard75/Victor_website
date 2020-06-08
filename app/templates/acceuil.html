@@ -10,26 +10,20 @@
     <link rel="stylesheet" href="{{url_for('static',filename='assets/fonts/font-awesome.min.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
     <link rel="stylesheet" href="{{url_for('static',filename='assets/css/Lightbox-Gallery.css')}}">
-    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/styles.css')}}">
+
 </head>
 
 <body>
-    <div class="container-fluid">
-        <p id="main_text"><br><a href="http://localhost:5000/index">Forma Gramma</a>&nbsp;[Forme de la lettre], est un programme de recherche autour de l’expression créative en typographie basée sur les moyens de production. Comment être créatif avec un processus de conception
-            emprunt de spécificités et de règles liées à un outil de production ? Pour ce projet de diplôme j’ai axé ce programme sur la découpeuse laser car celle-ci est accessible et rapide à prendre en main. Celle-ci permet aussi un large panel de
-            matières premières, tant qu’elles sont organiques.Pour ce projet de diplôme j’ai axé ce programme sur la découpeuse laser car celle-ci est accessible et rapide à prendre en main. Celle-ci permet aussi un large panel de matières premières,&nbsp;
-            <a
-                href="http://localhost:5000/librairie">Librairie</a>&nbsp;tant qu’elles sont organiques.Pour ce projet de diplôme j’ai axé ce programme sur la découpeuse laser car celle-ci est accessible et rapide à prendre en main. Celle-ci permet aussi un large panel de matières premières, tant
-                qu’elles sont organiques.<br><br></p>
-        <div class="col">
-            <p>-</p>
-            <p>Paragraph</p>
-            <p>Paragraph</p>
-        </div>
+    <p id="paragraphe" style="display:contents;"> ÷<a style="color: #2361FF; text-decoration:none;" href="acceuil">Forma Gramma</a> [Forme de la lettre], 
+        est un programme de recherche autour de l’expression créative en typographie basée sur les moyens de production. Comment être créatif avec un processus de conception emprunt de spécificités et de règles liées à un outil de production ? Pour ce projet de diplôme j’ai axé ce programme sur la découpeuse laser car celle-ci est accessible et rapide à prendre en main. Celle-ci permet aussi un large panel de matières premières, tant qu’elles sont organiques.Pour ce projet de diplôme j’ai axé ce programme sur la découpeuse laser car celle-ci est accessible et rapide à prendre en main. Celle-ci permet aussi un large panel de matières premières,
+        ÷¦<a href="librairie" style="color: #2361FF; text-decoration:none">Librairie</a> tant qu’elles sont organiques.Pour ce projet de diplôme j’ai axé ce programme sur la découpeuse laser car celle-ci est accessible et 
+        rapide à prendre en main. Celle-ci permet aussi un large panel de matières premières, tant qu’elles sont organiques.</p>
+    <div id="instagram">
+    <span id="animation" onclick="animation(this.innerText);" style="color: #2361FF; font-size:20px; cursor:pointer;">+</span>
     </div>
-    <script src="{{url_for('static',filename='assets/js/jquery.min.js')}}"></script>
-    <script src="{{url_for('static',filename='assets/bootstrap/js/bootstrap.min.js')}}"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+
+    <script src="{{url_for('static',filename='assets/js/acceuil.js')}}"></script>
+
 </body>
 
 </html>
