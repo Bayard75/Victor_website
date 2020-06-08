@@ -36,195 +36,102 @@
     </div>
     <div>
         <div class="container-fluid" style="padding-left: 23px;">
+        {% for lists in names_sublistes  %}
             <div class="row text-center" style="margin-bottom: 20px;">
                 <div class="col-md-3 offset-xl-0 first"><img class="first_top" src="{{url_for('static',filename='assets/img/Group 8.svg')}}"><img class="first_bottom" src="{{url_for('static',filename='assets/img/Group 7.svg')}}">
                     <div class="row product_image_row" style="/*display: block;*/">
-                        <div class="col" style="/*margin: auto;*//*display: block;*/padding-top: 31px;"><img src="{{url_for('static',filename='assets/img/2-16-17_1.svg')}}" style="width: 292px;height: 292px;"></div>
+                        <div class="col" style="/*margin: auto;*//*display: block;*/padding-top: 31px;"><img src="{{url_for('static',filename='assets/img/CN_PF_SVG/%s.svg' %lists[0])}}" style="width: 292px;height: 292px;"></div>
                     </div>
                     <div class="row product_description_row">
                         <div class="col-xl-5 offset-xl-0">
-                            <p>N° 13_12_14-1</p>
+                            <p>N° {{lists[0]}}</p>
                         </div>
                         <div class="col offset-xl-6 text-justify"><i class="fa fa-arrow-down"></i></div>
                     </div>
                 </div>
-                <div class="col-md-3 offset-xl-0 first"><img class="second_top" src="{{url_for('static',filename='assets/img/Group 1.svg')}}"><img class="second_bottom" src="{{url_for('static',filename='assets/img/Group 6.svg')}}">
-                    <div class="row product_image_row" style="/*display: block;*/">
-                        <div class="col" style="/*margin: auto;*//*display: block;*/padding-top: 31px;"><img src="{{url_for('static',filename='assets/img/2-16-17_10.svg')}}" style="width: 292px;height: 292px;"></div>
-                    </div>
-                    <div class="row product_description_row">
-                        <div class="col-xl-5 offset-xl-0">
-                            <p>N° 13_12_14-1</p>
+
+                {% if lists|length == 2 %}
+                    <div class="col-md-3 offset-xl-0 first"><img class="fourth_top_left" src="{{url_for('static',filename='assets/img/Group 1.svg')}}"><img class="fourth_bottom_left" src="{{url_for('static',filename='assets/img/Group 6.svg')}}"><img class="fourth_top_right" src="{{url_for('static',filename='assets/img/Group 4.svg')}}"><img class="fourth_bottom_right" src="{{url_for('static',filename='assets/img/Group 3.svg')}}">
+                        <div class="row product_image_row"
+                            style="/*display: block;*/">
+                            <div class="col" style="/*margin: auto;*//*display: block;*/padding-top: 31px;"><img src="{{url_for('static',filename='assets/img/CN_PF_SVG/%s.svg' %lists[1] )}}" style="width: 292px;height: 292px;"></div>
                         </div>
-                        <div class="col offset-xl-5"><i class="fa fa-arrow-down"></i></div>
-                    </div>
-                </div>
-                <div class="col-md-3 offset-xl-0 first"><img class="first_top" src="{{url_for('static',filename='assets/img/Group 1.svg')}}"><img class="first_bottom" src="{{url_for('static',filename='assets/img/Group 6.svg')}}">
-                    <div class="row product_image_row" style="/*display: block;*/">
-                        <div class="col" style="/*margin: auto;*//*display: block;*/padding-top: 31px;"><img src="{{url_for('static',filename='assets/img/2-16-17_6.svg')}}" style="width: 292px;height: 292px;"></div>
-                    </div>
-                    <div class="row product_description_row">
-                        <div class="col-xl-5 offset-xl-0">
-                            <p>N° 13_12_14-1</p>
+                        <div class="row product_description_row">
+                            <div class="col-xl-5 offset-xl-0">
+                                <p>N° {{lists[1]}}</p>
+                            </div>
+                            <div class="col offset-xl-5"><i class="fa fa-arrow-down"></i></div>
                         </div>
-                        <div class="col offset-xl-5"><i class="fa fa-arrow-down"></i></div>
                     </div>
-                </div>
-                <div class="col-md-3 offset-xl-0 first"><img class="fourth_top_left" src="{{url_for('static',filename='assets/img/Group 1.svg')}}"><img class="fourth_bottom_left" src="{{url_for('static',filename='assets/img/Group 6.svg')}}"><img class="fourth_top_right" src="{{url_for('static',filename='assets/img/Group 4.svg')}}"><img class="fourth_bottom_right" src="{{url_for('static',filename='assets/img/Group 3.svg')}}">
-                    <div class="row product_image_row"
-                        style="/*display: block;*/">
-                        <div class="col" style="/*margin: auto;*//*display: block;*/padding-top: 31px;"><img src="{{url_for('static',filename='assets/img/2-16-17_9.svg')}}" style="width: 292px;height: 292px;"></div>
-                    </div>
-                    <div class="row product_description_row">
-                        <div class="col-xl-5 offset-xl-0">
-                            <p>N° 13_12_14-1</p>
+                {% endif %}
+
+                {% if lists|length == 3 %}
+                    <div class="col-md-3 offset-xl-0 first"><img class="second_top" src="{{url_for('static',filename='assets/img/Group 1.svg')}}"><img class="second_bottom" src="{{url_for('static',filename='assets/img/Group 6.svg')}}">
+                        <div class="row product_image_row" style="/*display: block;*/">
+                            <div class="col" style="/*margin: auto;*//*display: block;*/padding-top: 31px;"><img src="{{url_for('static',filename='assets/img/CN_PF_SVG/%s.svg' %lists[1])}}" style="width: 292px;height: 292px;"></div>
                         </div>
-                        <div class="col offset-xl-5"><i class="fa fa-arrow-down"></i></div>
+                        <div class="row product_description_row">
+                            <div class="col-xl-5 offset-xl-0">
+                                <p>N° {{lists[1]}}</p>
+                            </div>
+                            <div class="col offset-xl-5"><i class="fa fa-arrow-down"></i></div>
+                        </div>
                     </div>
-                </div>
+
+                    <div class="col-md-3 offset-xl-0 first"><img class="fourth_top_left" src="{{url_for('static',filename='assets/img/Group 1.svg')}}"><img class="fourth_bottom_left" src="{{url_for('static',filename='assets/img/Group 6.svg')}}"><img class="fourth_top_right" src="{{url_for('static',filename='assets/img/Group 4.svg')}}"><img class="fourth_bottom_right" src="{{url_for('static',filename='assets/img/Group 3.svg')}}">
+                        <div class="row product_image_row"
+                            style="/*display: block;*/">
+                            <div class="col" style="/*margin: auto;*//*display: block;*/padding-top: 31px;"><img src="{{url_for('static',filename='assets/img/CN_PF_SVG/%s.svg' %lists[-1])}}" style="width: 292px;height: 292px;"></div>
+                        </div>
+                        <div class="row product_description_row">
+                            <div class="col-xl-5 offset-xl-0">
+                                <p>N° {{lists[-1]}}</p>
+                            </div>
+                            <div class="col offset-xl-5"><i class="fa fa-arrow-down"></i></div>
+                        </div>
+                    </div>
+                {% endif %}
+                
+                {% if lists|length == 4 %}
+                    <div class="col-md-3 offset-xl-0 first"><img class="second_top" src="{{url_for('static',filename='assets/img/Group 1.svg')}}"><img class="second_bottom" src="{{url_for('static',filename='assets/img/Group 6.svg')}}">
+                        <div class="row product_image_row" style="/*display: block;*/">
+                            <div class="col" style="/*margin: auto;*//*display: block;*/padding-top: 31px;"><img src="{{url_for('static',filename='assets/img/CN_PF_SVG/%s.svg' %lists[1])}}" style="width: 292px;height: 292px;"></div>
+                        </div>
+                        <div class="row product_description_row">
+                            <div class="col-xl-5 offset-xl-0">
+                                <p>N° {{lists[1]}}</p>
+                            </div>
+                            <div class="col offset-xl-5"><i class="fa fa-arrow-down"></i></div>
+                        </div>
+                    </div>
+
+                   <div class="col-md-3 offset-xl-0 first"><img class="second_top" src="{{url_for('static',filename='assets/img/Group 1.svg')}}"><img class="second_bottom" src="{{url_for('static',filename='assets/img/Group 6.svg')}}">
+                        <div class="row product_image_row" style="/*display: block;*/">
+                            <div class="col" style="/*margin: auto;*//*display: block;*/padding-top: 31px;"><img src="{{url_for('static',filename='assets/img/CN_PF_SVG/%s.svg' %lists[2])}}" style="width: 292px;height: 292px;"></div>
+                        </div>
+                        <div class="row product_description_row">
+                            <div class="col-xl-5 offset-xl-0">
+                                <p>N° {{lists[2]}}</p>
+                            </div>
+                            <div class="col offset-xl-5"><i class="fa fa-arrow-down"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 offset-xl-0 first"><img class="fourth_top_left" src="{{url_for('static',filename='assets/img/Group 1.svg')}}"><img class="fourth_bottom_left" src="{{url_for('static',filename='assets/img/Group 6.svg')}}"><img class="fourth_top_right" src="{{url_for('static',filename='assets/img/Group 4.svg')}}"><img class="fourth_bottom_right" src="{{url_for('static',filename='assets/img/Group 3.svg')}}">
+                        <div class="row product_image_row"
+                            style="/*display: block;*/">
+                            <div class="col" style="/*margin: auto;*//*display: block;*/padding-top: 31px;"><img src="{{url_for('static',filename='assets/img/CN_PF_SVG/%s.svg' %lists[-1])}}" style="width: 292px;height: 292px;"></div>
+                        </div>
+                        <div class="row product_description_row">
+                            <div class="col-xl-5 offset-xl-0">
+                                <p>N° {{lists[-1]}}</p>
+                            </div>
+                            <div class="col offset-xl-5"><i class="fa fa-arrow-down"></i></div>
+                        </div>
+                    </div>
+                {% endif %}
             </div>
-            
-            <div class="row text-center" style="margin-bottom: 20px;">
-                <div class="col-md-3 offset-xl-0 first"><img class="first_top" src="{{url_for('static',filename='assets/img/Group 8.svg')}}"><img class="first_bottom" src="{{url_for('static',filename='assets/img/Group 7.svg')}}">
-                    <div class="row product_image_row" style="/*display: block;*/">
-                        <div class="col" style="/*margin: auto;*//*display: block;*/padding-top: 31px;"><img src="{{url_for('static',filename='assets/img/2-16-17_1.svg')}}" style="width: 292px;height: 292px;"></div>
-                    </div>
-                    <div class="row product_description_row">
-                        <div class="col-xl-5 offset-xl-0">
-                            <p>N° 13_12_14-1</p>
-                        </div>
-                        <div class="col offset-xl-6 text-justify"><i class="fa fa-arrow-down"></i></div>
-                    </div>
-                </div>
-                <div class="col-md-3 offset-xl-0 first"><img class="second_top" src="{{url_for('static',filename='assets/img/Group 1.svg')}}"><img class="second_bottom" src="{{url_for('static',filename='assets/img/Group 6.svg')}}">
-                    <div class="row product_image_row" style="/*display: block;*/">
-                        <div class="col" style="/*margin: auto;*//*display: block;*/padding-top: 31px;"><img src="{{url_for('static',filename='assets/img/2-16-17_10.svg')}}" style="width: 292px;height: 292px;"></div>
-                    </div>
-                    <div class="row product_description_row">
-                        <div class="col-xl-5 offset-xl-0">
-                            <p>N° 13_12_14-1</p>
-                        </div>
-                        <div class="col offset-xl-5"><i class="fa fa-arrow-down"></i></div>
-                    </div>
-                </div>
-                <div class="col-md-3 offset-xl-0 first"><img class="first_top" src="{{url_for('static',filename='assets/img/Group 1.svg')}}"><img class="first_bottom" src="{{url_for('static',filename='assets/img/Group 6.svg')}}">
-                    <div class="row product_image_row" style="/*display: block;*/">
-                        <div class="col" style="/*margin: auto;*//*display: block;*/padding-top: 31px;"><img src="{{url_for('static',filename='assets/img/2-16-17_6.svg')}}" style="width: 292px;height: 292px;"></div>
-                    </div>
-                    <div class="row product_description_row">
-                        <div class="col-xl-5 offset-xl-0">
-                            <p>N° 13_12_14-1</p>
-                        </div>
-                        <div class="col offset-xl-5"><i class="fa fa-arrow-down"></i></div>
-                    </div>
-                </div>
-                <div class="col-md-3 offset-xl-0 first"><img class="fourth_top_left" src="{{url_for('static',filename='assets/img/Group 1.svg')}}"><img class="fourth_bottom_left" src="{{url_for('static',filename='assets/img/Group 6.svg')}}"><img class="fourth_top_right" src="{{url_for('static',filename='assets/img/Group 4.svg')}}"><img class="fourth_bottom_right" src="{{url_for('static',filename='assets/img/Group 3.svg')}}">
-                    <div class="row product_image_row"
-                        style="/*display: block;*/">
-                        <div class="col" style="/*margin: auto;*//*display: block;*/padding-top: 31px;"><img src="{{url_for('static',filename='assets/img/2-16-17_9.svg')}}" style="width: 292px;height: 292px;"></div>
-                    </div>
-                    <div class="row product_description_row">
-                        <div class="col-xl-5 offset-xl-0">
-                            <p>N° 13_12_14-1</p>
-                        </div>
-                        <div class="col offset-xl-5"><i class="fa fa-arrow-down"></i></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row text-center" style="margin-bottom: 20px;">
-                <div class="col-md-3 offset-xl-0 first"><img class="first_top" src="{{url_for('static',filename='assets/img/Group 8.svg')}}"><img class="first_bottom" src="{{url_for('static',filename='assets/img/Group 7.svg')}}">
-                    <div class="row product_image_row" style="/*display: block;*/">
-                        <div class="col" style="/*margin: auto;*//*display: block;*/padding-top: 31px;"><img src="{{url_for('static',filename='assets/img/2-16-17_1.svg')}}" style="width: 292px;height: 292px;"></div>
-                    </div>
-                    <div class="row product_description_row">
-                        <div class="col-xl-5 offset-xl-0">
-                            <p>N° 13_12_14-1</p>
-                        </div>
-                        <div class="col offset-xl-6 text-justify"><i class="fa fa-arrow-down"></i></div>
-                    </div>
-                </div>
-                <div class="col-md-3 offset-xl-0 first"><img class="second_top" src="{{url_for('static',filename='assets/img/Group 1.svg')}}"><img class="second_bottom" src="{{url_for('static',filename='assets/img/Group 6.svg')}}">
-                    <div class="row product_image_row" style="/*display: block;*/">
-                        <div class="col" style="/*margin: auto;*//*display: block;*/padding-top: 31px;"><img src="{{url_for('static',filename='assets/img/2-16-17_10.svg')}}" style="width: 292px;height: 292px;"></div>
-                    </div>
-                    <div class="row product_description_row">
-                        <div class="col-xl-5 offset-xl-0">
-                            <p>N° 13_12_14-1</p>
-                        </div>
-                        <div class="col offset-xl-5"><i class="fa fa-arrow-down"></i></div>
-                    </div>
-                </div>
-                <div class="col-md-3 offset-xl-0 first"><img class="first_top" src="{{url_for('static',filename='assets/img/Group 1.svg')}}"><img class="first_bottom" src="{{url_for('static',filename='assets/img/Group 6.svg')}}">
-                    <div class="row product_image_row" style="/*display: block;*/">
-                        <div class="col" style="/*margin: auto;*//*display: block;*/padding-top: 31px;"><img src="{{url_for('static',filename='assets/img/2-16-17_6.svg')}}" style="width: 292px;height: 292px;"></div>
-                    </div>
-                    <div class="row product_description_row">
-                        <div class="col-xl-5 offset-xl-0">
-                            <p>N° 13_12_14-1</p>
-                        </div>
-                        <div class="col offset-xl-5"><i class="fa fa-arrow-down"></i></div>
-                    </div>
-                </div>
-                <div class="col-md-3 offset-xl-0 first"><img class="fourth_top_left" src="{{url_for('static',filename='assets/img/Group 1.svg')}}"><img class="fourth_bottom_left" src="{{url_for('static',filename='assets/img/Group 6.svg')}}"><img class="fourth_top_right" src="{{url_for('static',filename='assets/img/Group 4.svg')}}"><img class="fourth_bottom_right" src="{{url_for('static',filename='assets/img/Group 3.svg')}}">
-                    <div class="row product_image_row"
-                        style="/*display: block;*/">
-                        <div class="col" style="/*margin: auto;*//*display: block;*/padding-top: 31px;"><img src="{{url_for('static',filename='assets/img/2-16-17_9.svg')}}" style="width: 292px;height: 292px;"></div>
-                    </div>
-                    <div class="row product_description_row">
-                        <div class="col-xl-5 offset-xl-0">
-                            <p>N° 13_12_14-1</p>
-                        </div>
-                        <div class="col offset-xl-5"><i class="fa fa-arrow-down"></i></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row text-center" style="margin-bottom: 20px;">
-                <div class="col-md-3 offset-xl-0 first"><img class="first_top" src="{{url_for('static',filename='assets/img/Group 8.svg')}}"><img class="first_bottom" src="{{url_for('static',filename='assets/img/Group 7.svg')}}">
-                    <div class="row product_image_row" style="/*display: block;*/">
-                        <div class="col" style="/*margin: auto;*//*display: block;*/padding-top: 31px;"><img src="{{url_for('static',filename='assets/img/2-16-17_1.svg')}}" style="width: 292px;height: 292px;"></div>
-                    </div>
-                    <div class="row product_description_row">
-                        <div class="col-xl-5 offset-xl-0">
-                            <p>N° 13_12_14-1</p>
-                        </div>
-                        <div class="col offset-xl-6 text-justify"><i class="fa fa-arrow-down"></i></div>
-                    </div>
-                </div>
-                <div class="col-md-3 offset-xl-0 first"><img class="second_top" src="{{url_for('static',filename='assets/img/Group 1.svg')}}"><img class="second_bottom" src="{{url_for('static',filename='assets/img/Group 6.svg')}}">
-                    <div class="row product_image_row" style="/*display: block;*/">
-                        <div class="col" style="/*margin: auto;*//*display: block;*/padding-top: 31px;"><img src="{{url_for('static',filename='assets/img/2-16-17_10.svg')}}" style="width: 292px;height: 292px;"></div>
-                    </div>
-                    <div class="row product_description_row">
-                        <div class="col-xl-5 offset-xl-0">
-                            <p>N° 13_12_14-1</p>
-                        </div>
-                        <div class="col offset-xl-5"><i class="fa fa-arrow-down"></i></div>
-                    </div>
-                </div>
-                <div class="col-md-3 offset-xl-0 first"><img class="first_top" src="{{url_for('static',filename='assets/img/Group 1.svg')}}"><img class="first_bottom" src="{{url_for('static',filename='assets/img/Group 6.svg')}}">
-                    <div class="row product_image_row" style="/*display: block;*/">
-                        <div class="col" style="/*margin: auto;*//*display: block;*/padding-top: 31px;"><img src="{{url_for('static',filename='assets/img/2-16-17_6.svg')}}" style="width: 292px;height: 292px;"></div>
-                    </div>
-                    <div class="row product_description_row">
-                        <div class="col-xl-5 offset-xl-0">
-                            <p>N° 13_12_14-1</p>
-                        </div>
-                        <div class="col offset-xl-5"><i class="fa fa-arrow-down"></i></div>
-                    </div>
-                </div>
-                <div class="col-md-3 offset-xl-0 first"><img class="fourth_top_left" src="{{url_for('static',filename='assets/img/Group 1.svg')}}"><img class="fourth_bottom_left" src="{{url_for('static',filename='assets/img/Group 6.svg')}}"><img class="fourth_top_right" src="{{url_for('static',filename='assets/img/Group 4.svg')}}"><img class="fourth_bottom_right" src="{{url_for('static',filename='assets/img/Group 3.svg')}}">
-                    <div class="row product_image_row"
-                        style="/*display: block;*/">
-                        <div class="col" style="/*margin: auto;*//*display: block;*/padding-top: 31px;"><img src="{{url_for('static',filename='assets/img/2-16-17_9.svg')}}" style="width: 292px;height: 292px;"></div>
-                    </div>
-                    <div class="row product_description_row">
-                        <div class="col-xl-5 offset-xl-0">
-                            <p>N° 13_12_14-1</p>
-                        </div>
-                        <div class="col offset-xl-5"><i class="fa fa-arrow-down"></i></div>
-                    </div>
-                </div>
-            </div>
+        {% endfor %}
         </div>
     </div>
     <script src="{{url_for('static',filename='assets/js/jquery.min.js')}}"></script>
