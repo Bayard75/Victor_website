@@ -1,0 +1,7 @@
+@font-face {
+	font-family: 'AUTHENTICA';
+	src: url(../../assets/fonts/authentica-mono-webfont.woff2) format('woff2'),
+	url(../../assets/fonts/authentica-mono-webfont.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}

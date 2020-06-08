@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "AUTHENTICA";
+  src: url('C:Users\mbaya\Desktop\Victor Projet\app\static\AUTHENTICA-Mono (2).woff') format('opentype');
+}
+
+#test {
+  position: absolute;
+  width: 335px;
+  height: 20px;
+  left: 20px;
+  top: 20px;
+  /* Texte */font-family: AUTHENTICA;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+#Galerie {
+  position: absolute;
+  width: 335px;
+  height: 20px;
+  left: 370px;
+  top: 20px;
+  /* Texte */font-family: AUTHENTICA;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2361FF;
+}
+
+#librairie {
+  Librairie */position: absolute;
+  width: 335px;
+  height: 20px;
+  left: 720px;
+  top: 20px;
+  /* Texte */font-family: AUTHENTICA;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+#Repertoire {
+  position: absolute;
+  width: 349px;
+  height: 20px;
+  left: 1070px;
+  top: 56px;
+  /* Texte */font-family: AUTHENTICA;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+#Modules {
+  position: absolute;
+  width: 164px;
+  height: 20px;
+  left: 720px;
+  top: 56px;
+  /* Texte */font-family: AUTHENTICA;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2361FF;
+}
+
+#Combinaison {
+  position: absolute;
+  width: 175px;
+  height: 20px;
+  left: 895px;
+  top: 56px;
+  /* Texte */font-family: AUTHENTICA;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2361FF;
+}
+

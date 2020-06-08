@@ -1,0 +1,296 @@
+.photo-gallery {
+  color: #313437;
+  background-color: #fff;
+}
+
+.photo-gallery p {
+  color: #7d8285;
+}
+
+.photo-gallery h2 {
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  color: inherit;
+}
+
+@media (max-width:767px) {
+  .photo-gallery h2 {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
+  }
+}
+
+.photo-gallery .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+
+.photo-gallery .intro p {
+  margin-bottom: 0;
+}
+
+.photo-gallery .photos {
+  padding-bottom: 20px;
+}
+
+.photo-gallery .item {
+  padding-bottom: 30px;
+}
+
+.span_top_left {
+  position: absolute;
+  top: -15px;
+  right: 3px;
+}
+
+.span_top_right {
+  position: absolute;
+  top: -7px;
+  left: 0px;
+}
+
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+}
+
+.container-fluid.d-flex.flex-column > * {
+}
+
+.row {
+  /*position: relative;*/
+  /*top: 56px;*/
+}
+
+.col {
+}
+
+#main-instagram {
+  position: absolute;
+  width: 199px;
+  height: 62px;
+  left: 20px;
+  top: 823px;
+  /* Texte */font-family: AUTHENTICA;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2361FF;
+}
+
+#combinaison {
+  /*position: absolute;*/
+  /*right: 0px;*/
+}
+
+#repertoire {
+  position: absolute;
+  /*right: left;*/
+  bottom: -27px;
+}
+
+#nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+#first_row {
+  position: relative;
+  top: 76px;
+}
+
+#top_left {
+  position: absolute;
+  left: 14px;
+  top: -21px;
+}
+
+.first_top_left {
+  position: absolute;
+  top: 0px;
+  left: 26px;
+}
+
+.first_top_right {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.first_bottom_left {
+  position: absolute;
+  bottom: 0px;
+  left: 21px;
+}
+
+.first_bottom_right {
+  position: absolute;
+  bottom: 0px;
+  right: -10px;
+}
+
+.middle_bottom_right {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.middle_top_right {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.last_bottom_right {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.last_top_right {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.row {
+  width: 100%;
+}
+
+#repertoire_image {
+  position: absolute;
+  top: 7px;
+  right: 5px;
+}
+
+#galerie_col {
+  position: relative;
+  left: -38px;
+}
+
+#repertoire {
+  position: absolute;
+  left: 1Opx;
+  bottom: -42px;
+}
+
+#combinaison {
+  position: absolute;
+  right: 25%;
+  /*bottom: 0px;*/
+}
+
+#modules {
+  position: absolute;
+  left: 16px;
+}
+
+.data {
+  margin-top: 20px;
+}
+
+.row.row-cols-4.data {
+  /*padding-top: 71px;*/
+  /*margin-top: 32px;*/
+  position: relative;
+  top: 100px;
+}
+
+.nom_element {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
+.row.nom {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  /*margin-top: -1492px;*/
+}
+
+.text-left {
+  margin-top: 30px;
+}
+
+.fleche {
+  position: absolute;
+  top: 0px;
+  right: 30px;
+  font-family: AUTHENTICA;
+  margin-top: 30px;
+}
+
+#combinaison_text {
+  position: absolute;
+  right: 3%;
+  bottom: 0%;
+}
+
+.first_top {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.first_bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.product_first_column {
+  width: 292px;
+  height: 292px;
+  /*margin: auto;*/
+  /*display: block;*/
+}
+
+.product_first_div {
+  /*margin: auto;*/
+  /*display: block;*/
+  /*text-align: center;*/
+}
+
+.second_top {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.second_bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.row.product_description_row {
+  margin-top: 20px;
+}
+
+.fourth_top_left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fourth_bottom_left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.fourth_top_right {
+  position: absolute;
+  right: 0;
+}
+
+.fourth_bottom_right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
