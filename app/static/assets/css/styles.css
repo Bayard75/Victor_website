@@ -9,7 +9,9 @@
   height: 20px;
   left: 20px;
   top: 20px;
-  /* Texte */font-family: AUTHENTICA;
+  /* Texte */
+
+font-family: AUTHENTICA;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -23,7 +25,9 @@
   height: 20px;
   left: 370px;
   top: 20px;
-  /* Texte */font-family: AUTHENTICA;
+  /* Texte */
+
+font-family: AUTHENTICA;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -32,12 +36,17 @@
 }
 
 #librairie {
-  Librairie */position: absolute;
+  Librairie */
+
+
+position: absolute;
   width: 335px;
   height: 20px;
   left: 720px;
   top: 20px;
-  /* Texte */font-family: AUTHENTICA;
+  /* Texte */
+
+font-family: AUTHENTICA;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -51,7 +60,9 @@
   height: 20px;
   left: 1070px;
   top: 56px;
-  /* Texte */font-family: AUTHENTICA;
+  /* Texte */
+
+font-family: AUTHENTICA;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -65,7 +76,9 @@
   height: 20px;
   left: 720px;
   top: 56px;
-  /* Texte */font-family: AUTHENTICA;
+  /* Texte */
+
+font-family: AUTHENTICA;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -79,11 +92,34 @@
   height: 20px;
   left: 895px;
   top: 56px;
-  /* Texte */font-family: AUTHENTICA;
+  /* Texte */
+
+font-family: AUTHENTICA;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 22px;
   color: #2361FF;
+}
+
+.col-md-3 offset-xl-0 first
+{
+  justify-content: center;
+}
+.col offset-xl-0
+{
+  display: contents;
+}
+a
+{
+  color:#FF0000;
+}
+@media (min-width:320px) and (max-width:720px){
+
+}
+body
+{
+  margin: 20px;
+  line-height: 1.3;
 }
 
