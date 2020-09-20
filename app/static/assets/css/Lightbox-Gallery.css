@@ -201,7 +201,11 @@ col-xl-_ offset-xl-2
     margin-top:6%;
   }
 }
-
+a:hover
+{
+  color: #FF0000;
+  text-decoration: none;
+}
 a:active
 {
   color:#FF0000;
