@@ -1,9 +1,6 @@
 import os
 
-directory = 'app/static/assets/img/CN_PF_SVG'
-
-
-def get_file_name():
+def get_file_name(directory):
 
     for path, dirs, files in os.walk(directory):
         x = files

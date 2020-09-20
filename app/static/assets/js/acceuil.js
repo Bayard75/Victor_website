@@ -8,7 +8,7 @@ function animation(text)
         let template =
         `<p>    
         Mail<br/>
-        Instagram</p>`;
+        <a href="https://www.instagram.com/forma_gramma/">Instagram</p></a>`;
         pagraphe.innerHTML= template;
         div_instagram.appendChild(pagraphe);
         let span = document.getElementById('animation');
@@ -23,3 +23,17 @@ function animation(text)
         span.innerText = '+';
     }
 };
+
+function more()
+{
+    class_show = document.getElementsByClassName('show')
+    for (i in class_show)
+    {
+        i.setAttribute('display','block')
+    }
+}
+function a_click(element)
+{
+    element.style.color = '#FF0000';
+    element.style.textDecoration= 'none';
+}

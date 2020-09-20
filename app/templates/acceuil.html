@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <p id="paragraphe" style="display:contents; color:rgba(0,0,0,.097)"> ÷<a style="text-decoration:none"; href="acceuil">
+    <p id="paragraphe" style="display:contents; color:rgba(0,0,0,0.3); font-size:18px"> ÷<a onclick="a_click(this)" style="text-decoration:none;"; href="acceuil">
     Forma Gramma</a> [Forme de la lettre] est une recherche sur l’émergence de formes de lettres disruptives via le détournement de moyens de production. 
     À savoir comment faire émerger de la disruption formelles à l’heure de la standardisation des outils de conception ? Ici, les expérimentations sont basées
      sur la machine de découpe laser (disponible en Fablab). Cette recherche s’inscrit à la croisé de deux contextes contemporains dans le champ du design: (1)
@@ -26,15 +26,13 @@
        de ses propres outils ? Peuvent-ils être des outils d’expérimentation critique ? La méthode appliquée à cette recherche se divise en trois parties. 
        Dans un premier temps on identifie le potentiel créatif d’un outil de production. Ensuite on établie un protocole de conception basé sur les spécificités 
        et les contraintes de l’outil. Puis on explorera et documentera les potentialités du protocole. Ce projet s’appuie sur des références tel que William Morris, 
-       Sol LeWitt, Enzo Mari ou encore Jürg Lehni, vous en trouverez plus sur ce <a style="text-decoration:none;" href="#">Blog</a>. Afin d’avoir plus de précision sur le protocole mis en place vous pouvez 
-       consulter le <a style="text-decoration:none;" href="#">PDF</a> de présentation. Cette recherche s’intéresse ainsi aux potentialités formelles par le prisme de la lettre mais plus généralement dans le
-        champ du design. C’est pourquoi il était important de partager ce qui a été le coeur du projet, la <a style="text-decoration:none;" href="librairie" >Library</a> (terme emprunt au vocabulaire de la culture open source),
+       Sol LeWitt, Enzo Mari ou encore Jürg Lehni, vous en trouverez plus sur ce <a style="text-decoration:none;" href="https://forma-gramma.tumblr.com/?fbclid=IwAR0fTqO0GHSt5YHPqhektO2-zcKFQQ8uhoWHHpp6WT2F6AzvABNgojTdazI">Blog</a>. Cette recherche s’intéresse ainsi aux potentialités formelles par le prisme de la lettre mais plus généralement dans le
+        champ du design. C’est pourquoi il était important de partager ce qui a été le coeur du projet, la <a onclick="a_click(this)" style="text-decoration:none;" href="librairie" >Library</a> (terme emprunt au vocabulaire de la culture open source),
          celle-ci comporte plus de 1000 formes téléchargeables au format .SVG, libre à vous de vous en servir. Vous trouverez aussi une page Galerie présentant les 
          productions réalisés. 
-    <div id="instagram">
+    <div id="instagram" style="font-size:18px">
     <span id="animation" onclick="animation(this.innerText);" style="text-decoration:none; color:#FF0000; font-size:20px; cursor:pointer;" >+</span>
     </div>
-
     <script src="{{url_for('static',filename='assets/js/acceuil.js')}}"></script>
 
 </body>
