@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{{url_for('static',filename='assets/css/Lightbox-Gallery.css')}}">
 </head>
 
-<body class="text-center d-flex flex-column flex-fill align-items-stretch m-auto justify-content-lg-start" style="font-family: AUTHENTICA;font-size: 18px;">
+<body class="text-center d-flex flex-column flex-fill align-items-stretch m-auto justify-content-lg-start" style="font-family: AUTHENTICA;font-size: 18px; -webkit-font-smoothing: antialiased;">
     <div>
         <div class="container-fluid" style="background:white; z-index:1; position:fixed;">
             <div class="row" id="header_first_row">
@@ -25,9 +25,9 @@
                     <a onclick="a_click(this)" href="galerie"><p>Galerie</p></a>
                 </div>
                 <div class="col-md-3 text-left show"><img src="{{url_for('static',filename='assets/img/Group 8.svg')}}" style="position: absolute;top: 1%;left: 2%;">
-                    <a onclick="a_click(this)" href="librairie"><p>Librairy</p></a>
+                    <a onclick="a_click(this)" href="librairie"><p>Library</p></a>
                 </div>
-                <div class="col-md-3 col-xl-3 offset-xl-0 text-left show"><img id="repertoire_icon"src="{{url_for('static',filename='assets/img/Group 4.svg')}}" style="position: absolute;top: 5%;right: 10px;">
+                <div cla    s="col-md-3 col-xl-3 offset-xl-0 text-left show"><img id="repertoire_icon"src="{{url_for('static',filename='assets/img/Group 4.svg')}}" style="position: absolute;top: 5%;right: 10px;">
                     <a onclick="a_click(this)" href="modules"><p>Modules</p></a>
                     <p style="color:rgb(0 0 0 / 0.31)">Répertoire</p>
                 </div>
@@ -38,7 +38,9 @@
         <div class="container-fluid" style="padding-left: 23px;" id='images_container'>
         {% for lists in names_sublistes  %}
             <div class="row text-center" style="margin-bottom: 20px;">
-                <div class="col-md-3 offset-xl-0 first"><img class="first_top" src="{{url_for('static',filename='assets/img/Group 8.svg')}}">
+                <div class="col-md-3 offset-xl-0 first">
+                    <img class="first_top" src="{{url_for('static',filename='assets/img/Group 8.svg')}}">
+                    <img class="first_bottom_left" src="{{url_for('static',filename='assets/img/Group 7.svg')}}">           
                 <img class="mobi_top_left" src="{{url_for('static',filename='assets/img/Group 8.svg')}}">
                 <img class="mobi_top_right" src="{{url_for('static',filename='assets/img/Group 4.svg')}}">
                     <div class="row product_image_row" style="/*display: block;*/">

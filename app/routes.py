@@ -12,7 +12,6 @@ def acceuil():
 def librairie():
     files_names = f.get_file_name('app/static/assets/img/CN_PF_SVG')
     names_sublistes = f.list_to_sublist(files_names,4)
-
     return render_template('librairie.html',names_sublistes = names_sublistes )
 
 @app.route('/galerie')
@@ -22,6 +21,5 @@ def galerie():
 @app.route('/modules')
 def modules():
     files_names = f.get_file_name('app/static/assets/img/modules')
-    names_sublistes = f.list_to_sublist(files_names, 4)
-
+    names_sublistes = [['1','2','3','4'], ['5','6','7','8'],['9','10','11','12'],['13','14','15','16'],['17']]
     return render_template('modules.html', names_sublistes = names_sublistes)
