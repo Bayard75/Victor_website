@@ -14,5 +14,3 @@ def get_file_name(directory):
 def list_to_sublist(l, n):
     for i in range(0, len(l), 4):
         yield l[i:i+n]
-
-
